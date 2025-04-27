@@ -1097,7 +1097,7 @@ Transform:
   m_GameObject: {fileID: 1432086874116533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.46, y: 0, z: 43.7}
+  m_LocalPosition: {x: 44.46, y: 0, z: 44.3}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3526,10 +3526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   agentSpawnPoint: {fileID: 0}
-  onMaterial: {fileID: 0}
-  offMaterial: {fileID: 0}
-  buttonRenderer: {fileID: 0}
-  gateObject: {fileID: 0}
+  onMaterial: {fileID: 2100000, guid: 80d4fd2bb784a5448b5ea522756c5ad3, type: 2}
+  offMaterial: {fileID: 2100000, guid: 6e789defa80477e4db16825f00db8273, type: 2}
+  buttonRenderer: {fileID: 23280304343823357}
   isEpisodic: 1
 --- !u!65 &65492622346184437
 BoxCollider:
@@ -3984,20 +3983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e048de15d0b8a4643a75c2b09981792e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pyramid: {fileID: 1891363201150404, guid: 8be2b3870e2cd4ad8bbf080059b2a132, type: 3}
-  stonePyramid: {fileID: 1703380733698014, guid: 41512dd84b60643ceb3855fcf9d7d318, type: 3}
-  spawnAreas:
-  - {fileID: 1772811412468375}
-  - {fileID: 1499223163352981}
-  - {fileID: 1211192258799453}
-  - {fileID: 1099372475693339}
-  - {fileID: 1487796720367741}
-  - {fileID: 1628005488314319}
-  - {fileID: 1589825010290519}
-  - {fileID: 1009802502030311}
-  - {fileID: 1589816323948341}
-  numPyra: 1
-  range: 45
 --- !u!114 &114399411683441529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4023,7 +4008,7 @@ MonoBehaviour:
   m_Model: {fileID: 5022602860645237092, guid: 471df1602961c43218ad9d0b2c1a4546, type: 3}
   m_InferenceDevice: 2
   m_BehaviorType: 0
-  m_BehaviorName: Pyramids
+  m_BehaviorName: Maze
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -4047,7 +4032,7 @@ MonoBehaviour:
   MaxStep: 5000
   moveSpeed: 3
   rotationSpeed: 200
-  goalTransform: {fileID: 0}
+  goalTransform: {fileID: 4173532100220863}
   rayMaxDistance: 5
   detectableLayers:
     serializedVersion: 2
