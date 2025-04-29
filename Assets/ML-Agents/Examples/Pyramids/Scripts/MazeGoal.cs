@@ -8,7 +8,7 @@ public class MazeGoal : MazeManager
     public Renderer buttonRenderer; // Assign the button's renderer in Inspector
 
     [Header("Gate Settings")]
-    //public GameObject gateObject; // Assign the gate GameObject (disable collider/renderer when opened)
+    public GameObject gateObject; // Assign the gate GameObject (disable collider/renderer when opened)
     public bool isEpisodic = true; // Reset button/gate on episode end
 
     private bool m_State; // Tracks if button is pressed
@@ -30,11 +30,11 @@ public class MazeGoal : MazeManager
             buttonRenderer.material = onMaterial;
 
             //// Open the gate (disable collider/renderer or trigger animation)
-            //if (gateObject != null)
-            //{
-            //    gateObject.SetActive(false); // Simple disable
-            //    // Alternatively: gateObject.GetComponent<Collider>().enabled = false;
-            //}
+            if (gateObject != null)
+            {
+                gateObject.SetActive(false); // Simple disable
+                // Alternatively: gateObject.GetComponent<Collider>().enabled = false;
+            }
 
             // Optional: Notify MazeManager to track completion
             if (m_MazeManager != null)
